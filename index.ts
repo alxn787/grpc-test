@@ -65,16 +65,18 @@ function handleUpdate(data: SubscribeUpdate): void {
       }
     }
 
+    console.log(JSON.stringify(data));
+}
 
-    if (usdcSwapDetected) {
-      console.log("USDC swap detected! 🔄");
-      console.log("Pre-token balances:", preTokenBalances);
-      console.log("Post-token balances:", postTokenBalances);
-      console.log("...................................");
-    }
-  } else {
-    console.log("No token balances found in this update for analysis.");
-  }
+//     if (usdcSwapDetected) {
+//       console.log("USDC swap detected! 🔄");
+//       console.log("Pre-token balances:", preTokenBalances);
+//       console.log("Post-token balances:", postTokenBalances);
+//       console.log("...................................");
+//     }
+//   } else {
+//     console.log("No token balances found in this update for analysis.");
+//   }
 }
 
 
@@ -251,3 +253,4 @@ async function main() {
 }
 
 main();
+
